@@ -1,3 +1,4 @@
+/* BASE */
 :root {
   --white: #ffffff;
   --primary: #61ecbc;
@@ -15,8 +16,10 @@ body {
   background-size: cover;
   min-height: 100vh;
   font-family: "Outfit", serif;
+  font-size: 2rem;
 }
 
+/* GENERAL */
 .container {
   max-width: 60rem;
   width: 95%;
@@ -42,4 +45,48 @@ body {
   background-color: var(--white);
   border-radius: 1rem;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+/* FORM */
+.form,
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.field {
+  gap: 1rem;
+}
+
+.form label {
+  color: var(--black);
+}
+
+.form select {
+  background-color: #ecebeb;
+  border: none;
+  padding: 2rem 1rem;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+}
+
+.form [type="submit"] {
+  background-color: var(--primary);
+  color: var(--black);
+  border: none;
+  padding: 2rem 1rem;
+  font-weight: 900;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.form [type="submit"]:hover {
+  background-color: #0cb387;
+}
+
+.error {
+  font-weight: 700;
+  color: #ec5f62;
 }
