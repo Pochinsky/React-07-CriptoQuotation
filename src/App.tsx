@@ -7,6 +7,7 @@ export default function App() {
 
   useEffect(() => {
     fetchCryptos();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
   return (
     <div className="container">

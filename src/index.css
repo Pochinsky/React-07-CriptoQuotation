@@ -5,6 +5,12 @@
   --black: #182339;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
 }
@@ -28,7 +34,7 @@ body {
 
 .title {
   font-size: 3.8rem;
-  margin-top: 5rem;
+  padding-top: 5rem;
   color: var(--white);
   line-height: 0.8;
 }
