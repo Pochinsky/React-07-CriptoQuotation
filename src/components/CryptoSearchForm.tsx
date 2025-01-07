@@ -4,7 +4,7 @@ import { ChangeEvent, FormEvent, useState } from "react";
 import { Pair } from "../types";
 import ErrorMessage from "./ErrorMessage";
 
-export default function CriptoSearchForm() {
+export default function CryptoSearchForm() {
   const { cryptoCurrencies, fetchData } = useCryptoStore();
   const [pair, setPair] = useState<Pair>({ currency: "", cryptoCurrency: "" });
   const [error, setError] = useState("");
