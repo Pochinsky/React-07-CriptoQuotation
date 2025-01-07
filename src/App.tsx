@@ -1,5 +1,6 @@
 import { useEffect } from "react";
-import CriptoSearchForm from "./components/CriptoSearchForm";
+import CryptoSearchForm from "./components/CryptoSearchForm";
+import CryptoPriceDisplay from "./components/CryptoPriceDisplay";
 import { useCryptoStore } from "./stores";
 
 export default function App() {
@@ -15,7 +16,8 @@ export default function App() {
         Cotizador de <span>Criptomonedas</span>
       </h1>
       <div className="content">
-        <CriptoSearchForm />
+        <CryptoSearchForm />
+        <CryptoPriceDisplay />
       </div>
     </div>
   );
